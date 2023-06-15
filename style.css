@@ -7,12 +7,16 @@
   height: 100vh;
   width: 55px;
   background-color: rgb(9, 47, 116);
-  overflow: hidden;
   transition: all 0.4s ease;
   transition-delay: 0.1s;
 }
 
-.sidebar.full{
+.sidebar_container {
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar.full {
   width: 255px;
 }
 
@@ -21,9 +25,12 @@
   align-items: center;
   padding: 10px 0px;
   cursor: pointer;
-  margin:0px 0px 10px 0px;
+  margin: 0px 0px 10px 0px;
+  position: relative;
+  height: 100% !important;
+  width: 100% !important;
 }
-.sidebar_item:hover{
+.sidebar_item:hover {
   background-color: rgb(10, 29, 65);
 }
 .sidebar_item p {
@@ -36,4 +43,47 @@
   font-size: 21px;
   color: white;
   margin-left: 15px;
+}
+
+.dashboard_info,
+.shortcut_info,
+.overview_info,
+.event_info,
+.about_info,
+.service_info,
+.contact_info {
+  display: none;
+  font-size: 14px !important;
+  position: absolute;
+  left: 240px;
+  top: 14px;
+  padding:4px 4px;
+  border-radius: 10px;
+  width: 200px !important;
+  cursor: pointer;
+  background-color: rgb(9, 47, 116);
+  color:#fff;
+  text-align: center;
+}
+
+.sidebar_item:hover .dashboard_info {
+  display: block;
+}
+.sidebar_item:hover .shortcut_info {
+  display: block;
+}
+.sidebar_item:hover .overview_info {
+  display: block;
+}
+.sidebar_item:hover .event_info {
+  display: block;
+}
+.sidebar_item:hover .about_info {
+  display: block;
+}
+.sidebar_item:hover .service_info {
+  display: block;
+}
+.sidebar_item:hover .contact_info {
+  display: block;
 }
