@@ -1,0 +1,39 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 50px;
+  background-color: rgb(9, 47, 116);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar .sidebar_item {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_item {
+  padding: 10px;
+  margin-bottom: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_item i {
+  font-size: 19px;
+  margin-right: 17px;
+  margin-left: 5px;
+}
+.sidebar_item p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sidebar_item:hover {
+  background-color: rgb(10, 29, 65);
+}
